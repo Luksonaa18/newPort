@@ -38,7 +38,7 @@ const scrollToSection = (sectionId: string) => {
 
 const Header = () => {
     return (
-        <header id="home" className="h-15 fixed w-full bg-black z-100 lg-shadow">
+        <header id="home" className="h-20 fixed w-full bg-black z-100 lg-shadow">
             {/* Mobile Navbar */}
             <nav className="lg:hidden flex flex-row items-center justify-between p-4">
                 <motion.h1
