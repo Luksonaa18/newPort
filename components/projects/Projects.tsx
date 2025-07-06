@@ -34,7 +34,31 @@ const Projects = () => {
     },
     {
       name: "Art Gallery",
-     image: facebook,
+      image: facebook,
+      image1: facebook1,
+      description:
+        "One of my earliest projects, showing growth over time. A reminder to be proud of your journey.",
+      id: "3",
+    },
+    {
+      name: "Art Gallery",
+      image: facebook,
+      image1: facebook1,
+      description:
+        "One of my earliest projects, showing growth over time. A reminder to be proud of your journey.",
+      id: "3",
+    },
+    {
+      name: "Art Gallery",
+      image: facebook,
+      image1: facebook1,
+      description:
+        "One of my earliest projects, showing growth over time. A reminder to be proud of your journey.",
+      id: "3",
+    },
+    {
+      name: "Art Gallery",
+      image: facebook,
       image1: facebook1,
       description:
         "One of my earliest projects, showing growth over time. A reminder to be proud of your journey.",
@@ -43,7 +67,7 @@ const Projects = () => {
   ]);
 
   return (
-    <section className="py-16 px-6 text-white">
+    <section id="projects" className="py-16 px-6 text-white">
       <h2 className="text-3xl font-bold text-center mb-10">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {projects.map((proj, index) => (

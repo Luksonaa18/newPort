@@ -45,7 +45,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="max-w-md mx-auto p-6 bg-gray-900 rounded-lg text-white shadow-lg">
+        <section id="contact" className="lg:w-full max-w-md mx-auto p-6 bg-gray-900 rounded-lg text-white shadow-lg">
             <h2 className="text-2xl font-bold mb-4 text-center">Contact Me</h2>
             {error && <p className="text-red-500 mb-2">{error}</p>}
             {success && <p className="text-green-400 mb-2">Thanks for your message!</p>}

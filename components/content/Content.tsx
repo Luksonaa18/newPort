@@ -1,19 +1,18 @@
 "use client";
-import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 // Icons
-import javascript from "@/public/javascript-colored.svg";
-import css from "@/public/css3-colored.svg";
-import react from "@/public/react-colored.svg";
-import typescript from "@/public/typescript-colored.svg";
-import vite from "@/public/vite-colored.svg";
-import html from "@/public/html5-colored.svg";
 import bootstrap from "@/public/bootstrap-colored.svg";
+import css from "@/public/css3-colored.svg";
+import html from "@/public/html5-colored.svg";
+import javascript from "@/public/javascript-colored.svg";
 import mui from "@/public/materialui-colored.svg";
 import mongodb from "@/public/mongodb-colored.svg";
 import nodejs from "@/public/nodejs-colored.svg";
+import react from "@/public/react-colored.svg";
+import typescript from "@/public/typescript-colored.svg";
+import vite from "@/public/vite-colored.svg";
 
 const skills = [
   { src: html, alt: "HTML5" },
@@ -76,17 +75,6 @@ const Content = () => {
             ))}
           </div>
         </div>
-      </motion.div>
-
-      {/* Image Placeholder Section */}
-      <motion.div
-        initial={{ scale: 1.05, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.2, ease: 'easeOut', delay: 0.3 }}
-        whileHover={{ scale: 1.05 }}
-        className='shadow-lg rounded-lg bg-gray-400 w-70 h-60'
-      >
-
       </motion.div>
     </div>
   );

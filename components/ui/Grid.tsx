@@ -9,8 +9,8 @@ import ContactForm from "../contact/ContactForm";
 
 export function GridBackgroundDemo() {
   return (
-    <div className="relative min-h-screen w-full overflow-x-hidden bg-white dark:bg-black">
-      {/* Background Grid with Mask Applied */}
+    <div className="absolute z-1000 min-h-screen w-full overflow-x-hidden bg-white dark:bg-black">
+      
       <div
         className={cn(
           "absolute inset-0 -z-10",

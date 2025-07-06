@@ -1,5 +1,4 @@
 "use client";
-import React from 'react';
 import { motion } from "framer-motion";
 import Menu from './Menu';
 
@@ -27,9 +26,19 @@ const logoVariants = {
     }
 };
 
+const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }
+};
+
 const Header = () => {
     return (
-        <header className="h-15 fixed w-full bg-black z-100 lg-shadow">
+        <header id="home" className="h-15 fixed w-full bg-black z-100 lg-shadow">
             {/* Mobile Navbar */}
             <nav className="lg:hidden flex flex-row items-center justify-between p-4">
                 <motion.h1
@@ -62,6 +71,7 @@ const Header = () => {
                         variants={itemVariants}
                         whileHover={itemVariants.whileHover}
                         className="cursor-pointer text-lg font-semibold text-white"
+                        onClick={() => scrollToSection('home')}
                     >
                         Home
                     </motion.li>
@@ -69,6 +79,7 @@ const Header = () => {
                         variants={itemVariants}
                         whileHover={itemVariants.whileHover}
                         className="cursor-pointer text-lg font-semibold text-white"
+                        onClick={() => scrollToSection('contact')}
                     >
                         Contact
                     </motion.li>
@@ -76,6 +87,7 @@ const Header = () => {
                         variants={itemVariants}
                         whileHover={itemVariants.whileHover}
                         className="cursor-pointer text-lg font-semibold text-white"
+                        onClick={() => scrollToSection('top')}
                     >
                         About
                     </motion.li>
@@ -83,6 +95,7 @@ const Header = () => {
                         variants={itemVariants}
                         whileHover={itemVariants.whileHover}
                         className="cursor-pointer text-lg font-semibold text-white"
+                        onClick={() => scrollToSection('projects')}
                     >
                         Projects
                     </motion.li>
